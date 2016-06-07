@@ -1,5 +1,5 @@
-import { BaseControllerMongoose } from 'bap-node-microframework-mongoose';
-export declare class PingController extends BaseControllerMongoose {
+import { BaseController } from 'bap-node-microframework/core';
+export declare class PingController extends BaseController {
     getAll(req: any, res: any): void;
 }
 declare var _default: any;

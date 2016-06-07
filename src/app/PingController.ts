@@ -1,8 +1,8 @@
 import { Get, WithRouter } from 'bap-node-microframework/decorators';
-import { BaseControllerMongoose } from 'bap-node-microframework-mongoose';
+import { BaseController } from 'bap-node-microframework/core';
 
 @WithRouter()
-export class PingController extends BaseControllerMongoose {
+export class PingController extends BaseController {
     @Get("/ping", { authenticated: false })
     getAll(req, res) {
         res.json({

@@ -11,7 +11,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-      "bap-node-microframework": "git+https://github.com/bap-node-microframework/node-microframework.git",
-      "bap-node-microframework-mongoose": "git+https://github.com/bap-node-microframework/node-microframework-mongoose.git"
+      "bap-node-microframework": "file:../node-microframework"
   }
 }

@@ -14,7 +14,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var decorators_1 = require('bap-node-microframework/decorators');
-var bap_node_microframework_mongoose_1 = require('bap-node-microframework-mongoose');
+var core_1 = require('bap-node-microframework/core');
 var PingController = (function (_super) {
     __extends(PingController, _super);
     function PingController() {
@@ -36,7 +36,7 @@ var PingController = (function (_super) {
         __metadata('design:paramtypes', [])
     ], PingController);
     return PingController;
-}(bap_node_microframework_mongoose_1.BaseControllerMongoose));
+}(core_1.BaseController));
 exports.PingController = PingController;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = PingController.router;

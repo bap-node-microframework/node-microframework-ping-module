@@ -32,6 +32,7 @@
         "formatOnSave": true
     },
     "files": [
+        "src/index.d.ts",
         "src/index.ts",
         "src/app/PingController.ts",
         "src/app/PingModule.ts",
