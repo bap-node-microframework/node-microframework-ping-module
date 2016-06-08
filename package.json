@@ -11,6 +11,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bap-node-microframework": "^0.1.3"
+    "bap-node-microframework": "^0.1.4"
   }
 }
