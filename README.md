@@ -10,31 +10,21 @@ npm install bap-node-microframework-ping-module --save
 ```
 ## Using
 
-To activate the ping module, write the following code in app/app.ts:
+To activate the ping module, write the following code in app/kernel.ts:
 
 ```javascript
-// app/app.ts
-...
+// app/kernel.ts
 
-import { PingPlugin } from 'bap-node-microframework-ping-module';
+import * as express from "express";
+import { PingModule } from "bap-node-microframework-ping-module";
+import { KernelInterface } from 'bap-node-microframework/core';
 
-...
+export class Kernel extends KernelInterface {
 
-import { Kernel } from "./kernel";
-var kernel = new Kernel();
-var App = new Application(<ApplicationOptions>{
-    ...
-}, <KernelInterface>kernel);
-
-...
-
-App.registerPlugin(PingPlugin, {});
-
-...
-
-App.start();
-
-...
+    boot(app, io: SocketIO.Server) {
+        new PingModule(app, io);
+    }
+}
 ```
 
 Now, if you go to http://localhost:3000/ping, you will get:
