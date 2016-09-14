@@ -9,9 +9,8 @@ var core_1 = require('bap-node-microframework/core');
 var core_2 = require('bap-node-microframework/core');
 var PingModule = (function (_super) {
     __extends(PingModule, _super);
-    function PingModule(app, io, container) {
-        container.registerService('router', container.get("router"));
-        core_2.Container.setApplicationInstance(container);
+    function PingModule(app, io) {
+        core_2.Container.setApplicationInstance(app.container);
         _super.call(this, app, io);
     }
     PingModule.prototype.registerControllers = function () {

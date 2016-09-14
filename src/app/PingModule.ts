@@ -3,9 +3,8 @@ import { Module } from 'bap-node-microframework/core';
 import { Container } from 'bap-node-microframework/core';
 
 export class PingModule extends Module {
-    constructor(app, io, container) {
-        container.registerService('router', container.get("router"));
-        Container.setApplicationInstance(container);
+    constructor(app, io) {
+        Container.setApplicationInstance(app.container);
         super(app, io);
     }
 
