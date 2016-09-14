@@ -1,6 +1,6 @@
 {
   "name": "bap-node-microframework-ping-module",
-  "version": "1.1",
+  "version": "1.1.0",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
