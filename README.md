@@ -14,17 +14,19 @@ To activate the ping module, write the following code in app/kernel.ts:
 
 ```javascript
 // app/kernel.ts
-
-import * as express from "express";
+...
 import { PingModule } from "bap-node-microframework-ping-module";
-import { KernelInterface } from 'bap-node-microframework/core';
+...
 
 export class Kernel extends KernelInterface {
 
     boot(app, io: SocketIO.Server) {
+        ...
         new PingModule(app, io);
+        ...
     }
 }
+...
 ```
 
 Now, if you go to http://localhost:3000/ping, you will get:
